@@ -1,3 +1,8 @@
+"""
+TIK TAC TOE
+LOGAN BELL
+"""
+
 def main():
     startList = [1,2,3,4,5,6,7,8,9]
     moves_list = [1,2,3,4,5,6,7,8,9]
@@ -15,6 +20,8 @@ def main():
             playerXO = 'O'
         #GETS THE INPUT FROM THE PLAYER AND CHANGES LIST VALUE ENTERED TO PLAYER NAME X or O
         getIn = int(input(f"{playerXO}'s turn to choose a square (1-9): "))
+
+        #THIS IS WHERE I COULD ADD CODE IN CASE THE USER INPUTS A VALUE WHERE AN X OR O ALREADY IS.
         moves_list[getIn - 1] = playerXO
         #PRINTS THE NEW TIK TAC TOE BOARD
         printTikTac(moves_list)
@@ -56,6 +63,5 @@ def printTikTac(moves_list):
 
 
 
-
-
-main()
+if __name__ == "__main__":
+    main()
